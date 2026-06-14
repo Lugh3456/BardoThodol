@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bardo Thodol — Introduction</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<div class="portal-bar">
+  <a href="https://lugh3456.github.io/DharmaGate/" class="portal-bar-link">← The Dharma Gate · 法门无量</a>
+</div>
+
+<header class="section-header">
+  <h1>Introduction</h1>
+  <p class="header-zh">Bardo Thodol · The Tibetan Book of the Dead</p>
+  <nav class="section-nav" aria-label="Section navigation">
+    <a href="index.html" class="back-link">Contents</a>
+    <a href="section2.html" class="back-link">Chikhai Bardo →</a>
+  </nav>
+</header>
+
+<main class="section-container" id="main-content">
+
+  <section class="full-text">
+    <p id="mainText">
+      Death is not an ending but a transition — in Tibetan, a "bardo," meaning "in-between."
+      The Bardo Thodol teaches how to remain aware during this transition, how to recognize
+      the true nature of one's own mind, and so attain liberation. If liberation is not
+      achieved, awareness can still help one choose a more favorable rebirth. The journey it
+      describes unfolds in three stages: the Chikhai Bardo, in which the luminosity of one's
+      true nature appears at the moment of death; the Chonyid Bardo, in which visions of
+      peaceful and wrathful deities arise from karmic tendencies; and the Sidpa Bardo, in
+      which karma reasserts itself and the being is drawn toward a new birth. Traditionally,
+      this text was read aloud at the ear of the dying, and continued to be recited for
+      forty-nine days afterward — a voice reminding the deceased, at every stage, that
+      everything appearing before them, glorious or terrifying, is a projection of their own
+      mind, without substance. To recognize this is itself the opportunity for liberation.
+    </p>
+    <button onclick="speak(document.getElementById('mainText').innerText)" class="read-btn">
+      🔊 Listen
+    </button>
+  </section>
+
+  <section class="line-explanation">
+    <h2>Reading the Text</h2>
+
+    <div class="explanation-card">
+      <p class="line"><strong>Death is not an ending but a transition — in Tibetan, a "bardo," meaning "in-between."</strong></p>
+      <p class="explanation">The word bardo applies generally to any interval between two states — between sleeping and waking, between one thought and the next — but its most famous use is for the interval between death and rebirth. The text reframes death not as annihilation but as a doorway, one that can be navigated skillfully or blindly depending on the dying person's preparation and the support offered by those around them.</p>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>The Bardo Thodol teaches how to remain aware during this transition, how to recognize the true nature of one's own mind, and so attain liberation.</strong></p>
+      <p class="explanation">"Recognition" is the technical term at the heart of the text. It does not mean acquiring new knowledge but recognizing — re-cognizing — something already present: the luminous, empty nature of awareness itself. The entire bardo journey is, from this angle, a series of opportunities to recognize this nature under increasingly difficult circumstances.</p>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>If liberation is not achieved, awareness can still help one choose a more favorable rebirth.</strong></p>
+      <p class="explanation">This is the text's pragmatic second tier — a fallback path. Not everyone will achieve recognition of the clear light at the moment of death, and the text acknowledges this, offering guidance for navigating the later stages with the more modest, but still significant, goal of influencing the circumstances of one's next birth.</p>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>The journey unfolds in three stages: the Chikhai Bardo, the Chonyid Bardo, and the Sidpa Bardo.</strong></p>
+      <p class="explanation">The Chikhai Bardo (the bardo of the moment of death) is brief but offers the clearest opportunity for recognition — the dharmakaya clear light. The Chonyid Bardo (the bardo of the experiencing of reality) unfolds over what the text describes as up to fourteen days, presenting visions of peaceful and wrathful deities arising from one's own mind. The Sidpa Bardo (the bardo of seeking rebirth) is where karmic tendencies reassert themselves and the being is drawn toward a new birth.</p>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>Traditionally, this text was read aloud at the ear of the dying, and continued to be recited for forty-nine days afterward.</strong></p>
+      <p class="explanation">The forty-nine-day period reflects the traditional Tibetan reckoning of the bardo's total duration (seven cycles of seven days). The recitation functions as a kind of ongoing instruction — a voice reminding the consciousness, at each stage, of what is happening and what response is called for, on the premise that the deceased can still hear and be guided even after physical death.</p>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>Everything appearing before them, glorious or terrifying, is a projection of their own mind, without substance. To recognize this is itself the opportunity for liberation.</strong></p>
+      <p class="explanation">This single instruction is repeated, in various forms, throughout the entire text — it is the thread that ties together every subsequent vision, deity, and ordeal. Modern readers often find this framing resonates with how the mind generates experience generally: the bardo can be read as a heightened, compressed mirror of ordinary mental life, where recognizing projections as projections is itself freeing.</p>
+    </div>
+
+  </section>
+
+  <section class="summary">
+    <h2>Summary</h2>
+    <p class="summary-zh">This introduction sets out the overall architecture and central spirit of the Bardo Thodol: death is a transition that can be skillfully navigated, unfolding across three successive bardos, with one instruction running through all of them — recognizing that everything which appears is a projection of one's own mind. This single recognition is both the door to liberation and the foundation for everything that follows in the text.</p>
+  </section>
+
+</main>
+
+<script>
+function speak(text) {
+  const synth = window.speechSynthesis;
+  function loadAndSpeak() {
+    const voices = synth.getVoices();
+    const preferred = voices.find(v => v.lang === "en-US" || v.lang === "en-GB");
+    const msg = new SpeechSynthesisUtterance(text);
+    msg.lang = "en-US";
+    if (preferred) msg.voice = preferred;
+    msg.rate = 0.9;
+    msg.pitch = 1;
+    synth.speak(msg);
+  }
+  if (speechSynthesis.getVoices().length === 0) {
+    speechSynthesis.onvoiceschanged = loadAndSpeak;
+  } else {
+    loadAndSpeak();
+  }
+}
+</script>
+
+<footer class="site-footer">
+  <a href="https://lugh3456.github.io/DharmaGate/" class="footer-portal-link">The Dharma Gate · 法门无量</a>
+  <p>&copy; 2026 Bardo Thodol Study</p>
+</footer>
+
+</body>
+</html>
