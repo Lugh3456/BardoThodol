@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bardo Thodol — Chonyid Bardo Overview</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<div class="portal-bar">
+  <a href="https://lugh3456.github.io/DharmaGate/" class="portal-bar-link">← The Dharma Gate · 法门无量</a>
+</div>
+
+<header class="section-header">
+  <h1>Stage 2 · Overview</h1>
+  <p class="header-zh">Chonyid Bardo — The Onset of Karmic Visions</p>
+  <nav class="section-nav" aria-label="Section navigation">
+    <a href="section2.html" class="back-link">← Chikhai Bardo</a>
+    <a href="index.html" class="back-link">Contents</a>
+    <a href="section4.html" class="back-link">Days 1–2 →</a>
+  </nav>
+</header>
+
+<main class="section-container" id="main-content">
+
+  <section class="full-text">
+    <p id="mainText">
+      O nobly-born, listen without distraction. You have been unconscious for three and a
+      half days, and now, awakening from this swoon, you will wonder "What has happened to
+      me?" Know that you are dead, and that you have entered the Chonyid Bardo, the bardo
+      of the experiencing of reality. Your body of this life lies behind you, and you now
+      possess a mental body, bright and clear, able to go wherever you wish in an instant.
+      From this point onward, brilliant lights, sounds like a thousand thunders, and
+      radiant forms — peaceful and wrathful — will arise before you, one after another,
+      over a span the teachings describe as up to fourteen days. Every one of these is
+      your own mind, the natural radiance of your own awareness, taking form. Whatever
+      appears, however vast or terrifying, do not be afraid, and do not run from it. If you
+      can recognize each appearance as your own projection, you are liberated on the spot.
+      If fear or longing arises and you turn away, you will continue downward into the
+      Sidpa Bardo.
+    </p>
+    <button onclick="speak(document.getElementById('mainText').innerText)" class="read-btn">
+      🔊 Listen
+    </button>
+  </section>
+
+  <section class="line-explanation">
+    <h2>Reading the Text</h2>
+
+    <div class="explanation-card">
+      <p class="line"><strong>O nobly-born, listen without distraction. You have been unconscious for three and a half days, and now, awakening from this swoon, you will wonder "What has happened to me?"</strong></p>
+      <p class="explanation">The text describes a period of unconsciousness following the Chikhai Bardo, before the visionary phase of the Chonyid Bardo begins. This "swoon" corresponds to the deep absorption into the ground luminosity — for those who could not sustain recognition, consciousness simply blacks out for a time before stirring again. The disorientation on waking is treated as expected and addressed directly, almost gently: of course you don't know what has happened yet.</p>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>Know that you are dead, and that you have entered the Chonyid Bardo, the bardo of the experiencing of reality. Your body of this life lies behind you, and you now possess a mental body, bright and clear, able to go wherever you wish in an instant.</strong></p>
+      <p class="explanation">This is one of the more practically striking instructions in the text: telling the deceased plainly that they have died. The "mental body" (yid lus) is described as unobstructed by physical matter — it can pass through walls, travel vast distances instantly, and appear to loved ones, though it usually cannot be perceived by the living and finds itself unable to communicate, which the text says can itself cause distress if not understood.</p>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>From this point onward, brilliant lights, sounds like a thousand thunders, and radiant forms — peaceful and wrathful — will arise before you, one after another, over a span the teachings describe as up to fourteen days. Every one of these is your own mind, the natural radiance of your own awareness, taking form.</strong></p>
+      <p class="explanation">This is the central claim that frames everything in the Chonyid Bardo. The deities that follow are not external beings to be worshipped or feared as one might fear an intruder — they are described as the natural display (rangshar) of awareness itself, the same way light is the natural display of the sun. Recognizing this changes the entire register of the experience: from "something is happening to me" to "this is what my own mind looks like when nothing is hiding it."</p>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>Whatever appears, however vast or terrifying, do not be afraid, and do not run from it. If you can recognize each appearance as your own projection, you are liberated on the spot.</strong></p>
+      <p class="explanation">The instruction repeats the core teaching from the Chikhai Bardo — non-grasping, non-aversion — but now applied to a much wider range of experience, including overtly frightening ones. The text is preparing the reader for the wrathful deities to come, insisting in advance that terror is not a sign of real danger but a sign of unrecognized awareness. Fear itself, in this framework, is the obstacle, not the visions that provoke it.</p>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>If fear or longing arises and you turn away, you will continue downward into the Sidpa Bardo.</strong></p>
+      <p class="explanation">The text names the two failure modes precisely: fear (pushing away) and longing (pulling toward). Either reaction — recoiling from the wrathful forms or being drawn toward the peaceful ones as if they were external saviors — keeps the dynamic of self and other intact, and so keeps the being moving toward rebirth rather than liberation. This sets up the detailed, day-by-day visions described in the sections that follow.</p>
+    </div>
+
+  </section>
+
+  <section class="summary">
+    <h2>Summary</h2>
+    <p class="summary-zh">The Chonyid Bardo opens with disorientation and a direct announcement: you have died, and a new phase has begun. What follows — a sequence of luminous and increasingly intense visions — is described in advance as nothing other than the natural display of one's own awareness. The instruction for the entire stage is the same one given at the moment of death, now extended across a far wider and more dramatic range of experience: recognize, and do not react with either longing or fear.</p>
+  </section>
+
+</main>
+
+<script>
+function speak(text) {
+  const synth = window.speechSynthesis;
+  function loadAndSpeak() {
+    const voices = synth.getVoices();
+    const preferred = voices.find(v => v.lang === "en-US" || v.lang === "en-GB");
+    const msg = new SpeechSynthesisUtterance(text);
+    msg.lang = "en-US";
+    if (preferred) msg.voice = preferred;
+    msg.rate = 0.9;
+    msg.pitch = 1;
+    synth.speak(msg);
+  }
+  if (speechSynthesis.getVoices().length === 0) {
+    speechSynthesis.onvoiceschanged = loadAndSpeak;
+  } else {
+    loadAndSpeak();
+  }
+}
+</script>
+
+<footer class="site-footer">
+  <a href="https://lugh3456.github.io/DharmaGate/" class="footer-portal-link">The Dharma Gate · 法门无量</a>
+  <p>&copy; 2026 Bardo Thodol Study</p>
+</footer>
+
+</body>
+</html>
