@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bardo Thodol — Peaceful Deities, Days 5–6</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<div class="portal-bar">
+  <a href="https://lugh3456.github.io/DharmaGate/" class="portal-bar-link">← The Dharma Gate · 法门无量</a>
+</div>
+
+<header class="section-header">
+  <h1>Stage 2 · III</h1>
+  <p class="header-zh">Peaceful Deities, Days 5–6</p>
+  <nav class="section-nav" aria-label="Section navigation">
+    <a href="section5.html" class="back-link">← Days 3–4</a>
+    <a href="index.html" class="back-link">Contents</a>
+    <a href="section7.html" class="back-link">Day 7 →</a>
+  </nav>
+</header>
+
+<main class="section-container" id="main-content">
+
+  <section class="full-text">
+    <p id="mainText">
+      On the fifth day, the Buddha Amoghasiddhi, green in colour, holding a crossed vajra,
+      will appear, radiating a brilliant green light, the all-accomplishing wisdom;
+      alongside it a dull red light from the realm of the jealous gods (asuras) will also
+      shine. Do not be drawn toward the red light out of envy and competitiveness.
+      Recognize the green light as the all-accomplishing wisdom, the natural capacity of
+      awareness to act without obstruction, and rest in it. On the sixth day, the four
+      Buddha families together with their consorts, the Bodhisattvas, and the guardians of
+      the gates will appear all at once, filling the whole of space — a vast mandala of
+      forty-two peaceful deities, radiating in union the combined lights of all five
+      wisdoms. This is the most complete display of the peaceful deities, and also the
+      moment at which the lights of all six realms of rebirth will shine together. If you
+      can recognize this entire vast display, every figure and every light, as the single
+      undivided nature of your own mind, you are liberated at once, without needing to
+      pass through anything further.
+    </p>
+    <button onclick="speak(document.getElementById('mainText').innerText)" class="read-btn">
+      🔊 Listen
+    </button>
+  </section>
+
+  <section class="line-explanation">
+    <h2>Reading the Text</h2>
+
+    <div class="explanation-card">
+      <p class="line"><strong>On the fifth day, the Buddha Amoghasiddhi, green in colour, holding a crossed vajra, will appear, radiating a brilliant green light, the all-accomplishing wisdom; alongside it a dull red light from the realm of the jealous gods (asuras) will also shine.</strong></p>
+      <p class="explanation">Amoghasiddhi represents the transformation of envy and competitiveness into the "all-accomplishing wisdom" — the quality of awareness that simply functions, accomplishing what needs to be done without the friction of comparison or rivalry. The asura (jealous god) realm is traditionally depicted as a realm of constant conflict and one-upmanship, a fitting pair for this particular affliction.</p>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>Do not be drawn toward the red light out of envy and competitiveness. Recognize the green light as the all-accomplishing wisdom, the natural capacity of awareness to act without obstruction, and rest in it.</strong></p>
+      <p class="explanation">With the fifth day, the text completes its set of five Buddhas, five wisdoms, and five afflictions — a structure meant to cover the full range of ordinary emotional reactivity: ignorance, anger, pride, craving, and envy, each with its corresponding wisdom. By this point in the sequence, the underlying pattern should be familiar to the reader: bright light is one's own nature; dim light is a pull back toward a particular emotional habit and its corresponding world.</p>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>On the sixth day, the four Buddha families together with their consorts, the Bodhisattvas, and the guardians of the gates will appear all at once, filling the whole of space — a vast mandala of forty-two peaceful deities, radiating in union the combined lights of all five wisdoms.</strong></p>
+      <p class="explanation">The sixth day is a kind of summation: rather than one Buddha and one wisdom at a time, everything appears together — the full mandala, all the figures encountered individually on the previous days now united in a single, overwhelming display. This structure mirrors a common feature of contemplative training generally: individual elements practiced separately are eventually encountered together, all at once, as a test of whether the earlier recognitions can hold under greater intensity.</p>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>This is the most complete display of the peaceful deities, and also the moment at which the lights of all six realms of rebirth will shine together.</strong></p>
+      <p class="explanation">Just as each individual Buddha was paired with one realm's light, the combined mandala is paired with all six realms' lights appearing together. The choice the deceased faces is now presented in its starkest form: the entire range of ordinary existence, all six possible destinations, versus the entire display of awakened qualities — both arising simultaneously from the same source, one's own mind.</p>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>If you can recognize this entire vast display, every figure and every light, as the single undivided nature of your own mind, you are liberated at once, without needing to pass through anything further.</strong></p>
+      <p class="explanation">This is presented as one of the major thresholds of the entire text. Up to this point, recognition has been offered day by day, piece by piece; here, the offer is total — recognize everything at once, as one thing, and the journey ends here. The text does not expect this to be common, but it states the possibility clearly before moving on to what happens for those who do not recognize it.</p>
+    </div>
+
+  </section>
+
+  <section class="summary">
+    <h2>Summary</h2>
+    <p class="summary-zh">The fifth day completes the set of five Buddhas, five wisdoms, and five afflictions with Amoghasiddhi's green light (the all-accomplishing wisdom, transforming envy) paired with the asura realm. The sixth day then presents everything at once — all five Buddha families, their consorts, Bodhisattvas, and gate-guardians, a mandala of forty-two peaceful deities, together with the combined light of all six realms. This is offered as a complete and final opportunity within the peaceful phase: recognize the whole vast display as the single nature of one's own mind, and liberation is immediate.</p>
+  </section>
+
+</main>
+
+<script>
+function speak(text) {
+  const synth = window.speechSynthesis;
+  function loadAndSpeak() {
+    const voices = synth.getVoices();
+    const preferred = voices.find(v => v.lang === "en-US" || v.lang === "en-GB");
+    const msg = new SpeechSynthesisUtterance(text);
+    msg.lang = "en-US";
+    if (preferred) msg.voice = preferred;
+    msg.rate = 0.9;
+    msg.pitch = 1;
+    synth.speak(msg);
+  }
+  if (speechSynthesis.getVoices().length === 0) {
+    speechSynthesis.onvoiceschanged = loadAndSpeak;
+  } else {
+    loadAndSpeak();
+  }
+}
+</script>
+
+<footer class="site-footer">
+  <a href="https://lugh3456.github.io/DharmaGate/" class="footer-portal-link">The Dharma Gate · 法门无量</a>
+  <p>&copy; 2026 Bardo Thodol Study</p>
+</footer>
+
+</body>
+</html>
