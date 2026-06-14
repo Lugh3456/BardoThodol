@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bardo Thodol — Peaceful Deities, Days 3–4</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<div class="portal-bar">
+  <a href="https://lugh3456.github.io/DharmaGate/" class="portal-bar-link">← The Dharma Gate · 法门无量</a>
+</div>
+
+<header class="section-header">
+  <h1>Stage 2 · II</h1>
+  <p class="header-zh">Peaceful Deities, Days 3–4</p>
+  <nav class="section-nav" aria-label="Section navigation">
+    <a href="section4.html" class="back-link">← Days 1–2</a>
+    <a href="index.html" class="back-link">Contents</a>
+    <a href="section6.html" class="back-link">Days 5–6 →</a>
+  </nav>
+</header>
+
+<main class="section-container" id="main-content">
+
+  <section class="full-text">
+    <p id="mainText">
+      On the third day, the Buddha Ratnasambhava, yellow in colour, holding a jewel, will
+      appear, radiating a brilliant yellow light, the wisdom of equality; alongside it a
+      dull blue light from the human realm will also shine. If you are drawn toward the
+      blue light out of attachment to the human world, you will take birth among humans
+      and again experience the sufferings of birth, old age, sickness, and death.
+      Recognize the yellow light as the wisdom of equality, the recognition that all
+      things share one nature, and let yourself rest in it without fear. On the fourth
+      day, the Buddha Amitabha, red in colour, holding a lotus, will appear, radiating a
+      brilliant red light, the wisdom of discernment; alongside it a dull yellow light
+      from the realm of the hungry ghosts will also shine. Do not be drawn toward the
+      yellow light out of craving and attachment. Recognize the red light as the wisdom
+      of discernment — the clarity that distinguishes all things without confusion while
+      remaining free of grasping — and merge with it without fear.
+    </p>
+    <button onclick="speak(document.getElementById('mainText').innerText)" class="read-btn">
+      🔊 Listen
+    </button>
+  </section>
+
+  <section class="line-explanation">
+    <h2>Reading the Text</h2>
+
+    <div class="explanation-card">
+      <p class="line"><strong>On the third day, the Buddha Ratnasambhava, yellow in colour, holding a jewel, will appear, radiating a brilliant yellow light, the wisdom of equality; alongside it a dull blue light from the human realm will also shine.</strong></p>
+      <p class="explanation">Ratnasambhava represents the transformation of pride into the "wisdom of equality" — the recognition that, at the level of basic nature, there is no hierarchy of better or worse, higher or lower. Pride depends on comparison; this wisdom dissolves the very ground comparison stands on. Its paired realm, the human realm, is described here not as undesirable in itself but as the realm most associated with pride and self-importance.</p>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>If you are drawn toward the blue light out of attachment to the human world, you will take birth among humans and again experience the sufferings of birth, old age, sickness, and death.</strong></p>
+      <p class="explanation">This passage is sometimes read with a touch of irony by modern commentators: the human realm is often regarded, within Buddhist cosmology, as the most favourable for spiritual practice — and yet here it is presented as a pull to be resisted, an attachment like any other. The text isn't saying human birth is bad; it's pointing out that being drawn toward any realm, even a good one, out of fear of the wisdom-light, is still a missed opportunity for something greater: complete liberation rather than another round of birth and death.</p>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>On the fourth day, the Buddha Amitabha, red in colour, holding a lotus, will appear, radiating a brilliant red light, the wisdom of discernment; alongside it a dull yellow light from the realm of the hungry ghosts will also shine.</strong></p>
+      <p class="explanation">Amitabha represents the transformation of attachment and craving into the "wisdom of discernment" — the capacity to perceive each thing distinctly, in its particularity, without that perception collapsing into grasping. This is a subtle point: discernment itself is not the problem; grasping at what is discerned is. The hungry ghost realm, traditionally associated with insatiable craving, is the paired alternative.</p>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>Do not be drawn toward the yellow light out of craving and attachment. Recognize the red light as the wisdom of discernment — the clarity that distinguishes all things without confusion while remaining free of grasping — and merge with it without fear.</strong></p>
+      <p class="explanation">The instruction again separates two things that, in ordinary experience, feel inseparable: noticing differences (which is natural and even necessary) and craving based on those differences (which is the source of suffering). The "wisdom of discernment" is presented as what's left when you keep the first and release the second — full clarity about what's what, with nothing sticky attached to any of it.</p>
+    </div>
+
+  </section>
+
+  <section class="summary">
+    <h2>Summary</h2>
+    <p class="summary-zh">Days three and four continue the pattern of the Chonyid Bardo, now addressing pride and craving. Ratnasambhava's yellow light (the wisdom of equality, transforming pride) is paired with the human realm's light; Amitabha's red light (the wisdom of discernment, transforming craving) is paired with the hungry ghost realm's light. Each pairing makes the same point from a different angle: the afflictive emotion and its corresponding wisdom are not opposites needing to fight one another, but the same energy recognized — or not recognized — for what it is.</p>
+  </section>
+
+</main>
+
+<script>
+function speak(text) {
+  const synth = window.speechSynthesis;
+  function loadAndSpeak() {
+    const voices = synth.getVoices();
+    const preferred = voices.find(v => v.lang === "en-US" || v.lang === "en-GB");
+    const msg = new SpeechSynthesisUtterance(text);
+    msg.lang = "en-US";
+    if (preferred) msg.voice = preferred;
+    msg.rate = 0.9;
+    msg.pitch = 1;
+    synth.speak(msg);
+  }
+  if (speechSynthesis.getVoices().length === 0) {
+    speechSynthesis.onvoiceschanged = loadAndSpeak;
+  } else {
+    loadAndSpeak();
+  }
+}
+</script>
+
+<footer class="site-footer">
+  <a href="https://lugh3456.github.io/DharmaGate/" class="footer-portal-link">The Dharma Gate · 法门无量</a>
+  <p>&copy; 2026 Bardo Thodol Study</p>
+</footer>
+
+</body>
+</html>
