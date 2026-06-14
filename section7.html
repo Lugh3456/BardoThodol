@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bardo Thodol — Day 7: The Knowledge-Holders</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<div class="portal-bar">
+  <a href="https://lugh3456.github.io/DharmaGate/" class="portal-bar-link">← The Dharma Gate · 法门无量</a>
+</div>
+
+<header class="section-header">
+  <h1>Stage 2 · IV</h1>
+  <p class="header-zh">Day 7: The Knowledge-Holders</p>
+  <nav class="section-nav" aria-label="Section navigation">
+    <a href="section6.html" class="back-link">← Days 5–6</a>
+    <a href="index.html" class="back-link">Contents</a>
+    <a href="section8.html" class="back-link">The Wrathful Deities →</a>
+  </nav>
+</header>
+
+<main class="section-container" id="main-content">
+
+  <section class="full-text">
+    <p id="mainText">
+      O nobly-born, on the seventh day, the Knowledge-Holders (Vidyadharas) will gather in
+      their pure realms, their bodies of rainbow light, dancing and playing music amid a
+      blaze of five-coloured light. This light, like that of all the days before, will be
+      almost too radiant to bear, and alongside it a dull, smoke-coloured light from the
+      animal realm will also shine. Whatever you feel — fear before the brilliance, or
+      familiarity with the dimmer light — know that the Knowledge-Holders are not separate
+      from you; their assembly is the spontaneous expression of your own awareness, fully
+      ripened. Recognize them as such, with neither fear nor longing, and you will dissolve
+      into their assembly and attain a body of light. If you fail to recognize this, and
+      either retreat in fear or drift toward the dim light of the animal realm out of
+      familiarity, then the peaceful visions will have run their course. From this point
+      the appearances will change in character, and the wrathful forms will begin to
+      arise.
+    </p>
+    <button onclick="speak(document.getElementById('mainText').innerText)" class="read-btn">
+      🔊 Listen
+    </button>
+  </section>
+
+  <section class="line-explanation">
+    <h2>Reading the Text</h2>
+
+    <div class="explanation-card">
+      <p class="line"><strong>O nobly-born, on the seventh day, the Knowledge-Holders (Vidyadharas) will gather in their pure realms, their bodies of rainbow light, dancing and playing music amid a blaze of five-coloured light.</strong></p>
+      <p class="explanation">The Vidyadharas ("knowledge-holders") represent realized beings of the tantric path — neither ordinary Buddhas in the formal sense used on the previous six days, nor the wrathful protectors yet to come, but a kind of bridge figure: accomplished practitioners whose bodies have themselves become light. Their depiction as dancing and making music introduces a register of joy and spontaneity that has been largely absent from the more solemn imagery of the previous days.</p>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>This light, like that of all the days before, will be almost too radiant to bear, and alongside it a dull, smoke-coloured light from the animal realm will also shine.</strong></p>
+      <p class="explanation">The familiar structure persists even here: an overwhelming light paired with a dimmer, realm-specific alternative — this time the animal realm, traditionally associated with ignorance in its more instinctive, unreflective form (as distinct from the conceptual ignorance paired with Vairocana on day one). The repetition across seven days is itself part of the teaching: by now, the pattern should be recognizable to the reader even if it wasn't on day one.</p>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>Whatever you feel — fear before the brilliance, or familiarity with the dimmer light — know that the Knowledge-Holders are not separate from you; their assembly is the spontaneous expression of your own awareness, fully ripened. Recognize them as such, with neither fear nor longing, and you will dissolve into their assembly and attain a body of light.</strong></p>
+      <p class="explanation">"Dissolving into their assembly" is described in more intimate, participatory terms than the earlier days' instruction to "merge with" a single Buddha's light — here, the deceased is invited to join a gathering, becoming one among many luminous forms rather than simply recognizing a single radiance. The phrase "body of light" points to a level of realization associated, in the broader Dzogchen and tantric traditions, with the most accomplished practitioners.</p>
+    </div>
+
+    <div class="explanation-card">
+      <p class="line"><strong>If you fail to recognize this... the peaceful visions will have run their course. From this point the appearances will change in character, and the wrathful forms will begin to arise.</strong></p>
+      <p class="explanation">This line marks a major structural turn in the text. The seven days just described — the peaceful deities — represent one register of the mind's natural display; what follows is another register entirely, often experienced as far more frightening. The text is careful to flag the transition in advance, for the same reason it has flagged everything in advance: so that whatever arises next is met with recognition rather than raw shock.</p>
+    </div>
+
+  </section>
+
+  <section class="summary">
+    <h2>Summary</h2>
+    <p class="summary-zh">The seventh day brings the peaceful phase of the Chonyid Bardo to a close with the Knowledge-Holders — luminous, joyful figures whose dancing assembly offers one final invitation to recognize the display as one's own awareness and dissolve into it, attaining a body of light. If this opportunity, like those before it, passes unrecognized, the character of the visions shifts. What comes next — the wrathful deities — is described as more intense, but the text insists from the outset that it is, in essence, the same display in a different key.</p>
+  </section>
+
+</main>
+
+<script>
+function speak(text) {
+  const synth = window.speechSynthesis;
+  function loadAndSpeak() {
+    const voices = synth.getVoices();
+    const preferred = voices.find(v => v.lang === "en-US" || v.lang === "en-GB");
+    const msg = new SpeechSynthesisUtterance(text);
+    msg.lang = "en-US";
+    if (preferred) msg.voice = preferred;
+    msg.rate = 0.9;
+    msg.pitch = 1;
+    synth.speak(msg);
+  }
+  if (speechSynthesis.getVoices().length === 0) {
+    speechSynthesis.onvoiceschanged = loadAndSpeak;
+  } else {
+    loadAndSpeak();
+  }
+}
+</script>
+
+<footer class="site-footer">
+  <a href="https://lugh3456.github.io/DharmaGate/" class="footer-portal-link">The Dharma Gate · 法门无量</a>
+  <p>&copy; 2026 Bardo Thodol Study</p>
+</footer>
+
+</body>
+</html>
