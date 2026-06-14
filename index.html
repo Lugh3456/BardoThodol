@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Read and study the Bardo Thodol, the Tibetan Book of the Dead, section by section with line-by-line commentary.">
+  <title>Bardo Thodol | The Tibetan Book of the Dead</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700&family=Noto+Sans+SC:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    /* ── Part sections ── */
+    .vagga-section {
+      max-width: 960px;
+      margin: 2rem auto 0;
+      padding: 0 1.5rem;
+    }
+
+    .vagga-heading {
+      font-family: "Noto Serif SC", serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--red);
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .vagga-heading span {
+      font-family: "Noto Sans SC", sans-serif;
+      font-size: 0.8rem;
+      font-weight: 400;
+      color: var(--muted);
+      margin-left: 0.6rem;
+    }
+
+    /* ── Chapter grid ── */
+    .chapter-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .chapter-card {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      padding: 1rem 1rem 0.9rem;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      text-decoration: none;
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+    }
+
+    .chapter-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 16px rgba(0,0,0,0.09);
+      border-color: var(--red);
+    }
+
+    .chapter-num {
+      font-size: 0.72rem;
+      color: var(--saffron);
+      letter-spacing: 0.05em;
+      font-family: "Noto Sans SC", sans-serif;
+    }
+
+    .chapter-zh {
+      font-family: "Noto Serif SC", serif;
+      font-size: 0.97rem;
+      font-weight: 700;
+      color: var(--ink);
+      line-height: 1.3;
+    }
+
+    .chapter-en {
+      font-size: 0.75rem;
+      color: var(--muted);
+    }
+
+    @media (max-width: 600px) {
+      .chapter-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .vagga-section {
+        padding: 0 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<a class="skip-link" href="#main-content">Skip to content</a>
+
+<div class="portal-bar">
+  <a href="https://lugh3456.github.io/DharmaGate/" class="portal-bar-link">← The Dharma Gate · 法门无量</a>
+</div>
+
+<header class="site-header">
+  <h1>Bardo Thodol</h1>
+  <p class="header-zh">The Tibetan Book of the Dead</p>
+  <p class="header-tradition">Tibetan Buddhism · Nyingma Tradition</p>
+</header>
+
+<section class="intro">
+  <p>
+    The Bardo Thodol (Tibetan: "Liberation Through Hearing During the Intermediate State"),
+    known in the West as the Tibetan Book of the Dead, is a Nyingma terma text traditionally
+    attributed to the teachings of Padmasambhava and revealed by Karma Lingpa in the
+    fourteenth century. It is a guide recited for the dying, the recently deceased, and
+    their living relatives, describing the journey through the "bardo" — the intermediate
+    state between death and rebirth — in three stages: the Chikhai Bardo, the Chonyid
+    Bardo, and the Sidpa Bardo, each presenting both an opportunity for liberation and
+    possible pitfalls. This site follows that three-stage structure, presenting the text
+    section by section with line-by-line commentary and a modern perspective for study
+    and reflection.
+  </p>
+</section>
+
+<main id="main-content">
+
+  <!-- Part 1: Introduction -->
+  <section class="vagga-section">
+    <h2 class="vagga-heading">Introduction</h2>
+    <div class="chapter-grid">
+      <a href="section1.html" class="chapter-card">
+        <span class="chapter-num">Preface</span>
+        <span class="chapter-zh">Introduction to the Bardo Teachings</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Part 2: Chikhai Bardo -->
+  <section class="vagga-section">
+    <h2 class="vagga-heading">Chikhai Bardo <span>The Moment of Death</span></h2>
+    <div class="chapter-grid">
+      <a href="section2.html" class="chapter-card">
+        <span class="chapter-num">Stage 1</span>
+        <span class="chapter-zh">Death and the Clear Light</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Part 3: Chonyid Bardo -->
+  <section class="vagga-section">
+    <h2 class="vagga-heading">Chonyid Bardo <span>The Experiencing of Reality</span></h2>
+    <div class="chapter-grid">
+      <a href="section3.html" class="chapter-card">
+        <span class="chapter-num">Stage 2 · Overview</span>
+        <span class="chapter-zh">The Onset of Karmic Visions</span>
+      </a>
+      <a href="section4.html" class="chapter-card">
+        <span class="chapter-num">Stage 2 · I</span>
+        <span class="chapter-zh">Peaceful Deities, Days 1–2</span>
+      </a>
+      <a href="section5.html" class="chapter-card">
+        <span class="chapter-num">Stage 2 · II</span>
+        <span class="chapter-zh">Peaceful Deities, Days 3–4</span>
+      </a>
+      <a href="section6.html" class="chapter-card">
+        <span class="chapter-num">Stage 2 · III</span>
+        <span class="chapter-zh">Peaceful Deities, Days 5–6</span>
+      </a>
+      <a href="section7.html" class="chapter-card">
+        <span class="chapter-num">Stage 2 · IV</span>
+        <span class="chapter-zh">Day 7: The Knowledge-Holders</span>
+      </a>
+      <a href="section8.html" class="chapter-card">
+        <span class="chapter-num">Stage 2 · V</span>
+        <span class="chapter-zh">The Wrathful Deities</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Part 4: Sidpa Bardo -->
+  <section class="vagga-section">
+    <h2 class="vagga-heading">Sidpa Bardo <span>Seeking Rebirth</span></h2>
+    <div class="chapter-grid">
+      <a href="section9.html" class="chapter-card">
+        <span class="chapter-num">Stage 3 · I</span>
+        <span class="chapter-zh">The Judgment of Karma</span>
+      </a>
+      <a href="section10.html" class="chapter-card">
+        <span class="chapter-num">Stage 3 · II</span>
+        <span class="chapter-zh">Signs of Rebirth & Closing the Womb-Door</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Part 5: Conclusion -->
+  <section class="vagga-section">
+    <h2 class="vagga-heading">Conclusion</h2>
+    <div class="chapter-grid">
+      <a href="section11.html" class="chapter-card">
+        <span class="chapter-num">Conclusion</span>
+        <span class="chapter-zh">Modern Relevance of the Bardo Teachings</span>
+      </a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <a href="https://lugh3456.github.io/DharmaGate/" class="footer-portal-link">The Dharma Gate · 法门无量</a>
+  <p>&copy; 2026 Bardo Thodol Study</p>
+</footer>
+
+</body>
+</html>
